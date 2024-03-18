@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About Us</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Pet Paradise Rescue
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adopt.html">Adopt</a></li>
+                <li><a href="pets.html">Our Pets</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about">
+        <h1>About Us</h1>
+        <p style="font-weight: bold">Pet Paradise Rescue is a new start for all animals</p>
+        <div class="about-info">
+            <div class="about-img">
+                <img src="dogsplaying.jpg" alt="Dogs playing">
+            </div>
+            <div>
+                <p>Here at Pet Paradise Rescue, we make it our mission to give every animal a chance, regardless of size, species, or appearance...</p>
+                <button>Contact Us Below!</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <form action="send_contact.php" method="post">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+      
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+      
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="emailaddress" placeholder="Your email address..." required>
+      
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+      
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+    <footer>
+        <p>© 2024 Pet Paradise Rescue.</p>
+    </footer>
+</body>
+</html>
