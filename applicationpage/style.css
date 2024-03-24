@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    position: absolute;
+}
+
+
+.page-banner {
+    display: flex;
+    min-height: 70vh;
+    background: url(banner-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.page-intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    left: 300px;
+    margin-top: 300px;
+    
+}
+
+.page-title {
+    font-size: 60px;
+}
+
+header {    
+    display: flex;
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    padding: 0px 30px;
+    justify-content: space-between;
+    padding: 20px 0px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+}
+
+
+.navbar a {
+    margin-right: 80px;
+    text-decoration: none;
+}
+
+.logo{
+    width: 100px;
+    translate: 100px;
+    transition: 0.5s ease-out;
+}
+
+.main-site {
+    background: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.app-container {
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.app-title {
+    font-size: 20px;
+    font-weight : 600;
+    color: #000;
+    position: relative;
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.app-title::before {
+
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: #8B0000;
+}
+
+
+.app-container form {
+    min-height: 200px;
+    width: 100%;
+    margin-top: 16px;
+    padding: 20px 30px ;
+}
+
+.app-container .first-form .fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input-fields{
+    display: flex;
+    width: calc(100% / 3 - 20px);
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+
+.second-form .fields,
+.final-form .fields {
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-form .fields .input-fields,
+.final-form .fields .input-fields{
+    flex-direction: row;
+    width: 100%;
+    gap: 30px;
+    align-items: center;
+}
+
+.second-form .input-fields textarea {
+    flex: 1;
+}
+
+
+.input-fields label {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2e2e2e;
+}
+
+.input-fields input,
+.input-fields select {
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #aaaa;
+    border-radius: 5px;
+    height: 42px;
+    margin: 8px 0;
+    padding: 0 15px;
+}
+
+
+.input-fields input:focus{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1)
+}
+
+
+
+
+.input-fields {
+    display: flex;
+    width: calc(100% / 3 - 20px);
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.input-fields input[type="date"]{
+    color: #707070;
+}
+
+.input-fields input[type="date"]:valid{
+    color: #333;
+}
+
+
+.first-form .input-fields:nth-child(8){
+    flex-grow: 1;
+    padding-left: 30px;
+}
+
+
+.number {
+    display: flex;
+}
+
+.num-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.num-type label {
+    margin-left: 40px;
+}
+
+
+.app-container form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    max-width: 200px;
+    outline: none;
+    background-color: green;
+    color: #fff;
+    margin-top: 30px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+
+.app-container form button:hover {
+    transition: all 0.3s linear;
+}
+
+form .buttons {
+    display: flex;
+}
+
+form .buttons button {
+    margin-right: 30px;
+}
+
+
+.app-container form button:hover {
+    background-color: #0a4820;
+}
+.have-questions {
+    
+    margin: 50px 50px;
+    background-image: url(curious-cat.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.have-questions .contact-container {
+    translate: 0 -400px ;
+    color: #fff;
+    transition: 0.5s smooth;
+}
+
+
+

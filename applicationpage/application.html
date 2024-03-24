@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Paradise Rescue | Application Form</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-banner">
+        <header>
+            <a href="#">
+                <img src="logo.jfif" alt="Paradise Pet Rescue Logo" class="logo">
+            </a>
+            <div class="navbar">
+                <a href="#">Home</a>
+                <a href="#">Our Pets</a>
+                <a href="#">About Us</a>
+                <a href="#">Donate</a>
+            </div>
+        </header>
+        <div class="page-intro">
+            <h1 class="page-title">Ready to Adopt?</h1>
+            <p class="apply-now">Apply now below!</p>
+        </div>
+    </div>
+
+    <div class="main-site">
+        <section class="app-container">
+            <form action="submit_application.php" method="post" class="application-form">
+                <div class="app-title">
+                    <h1>Contact Information</h1>
+                </div>
+               <div class="fields">
+                    <div class="input-fields">
+                        <label>First Name</label>
+                        <input type="text" name="FirstName" placeholder="First Name" required>
+                    </div>
+                    <div class="input-fields">
+                        <label>Last Name</label>
+                        <input type="text" name="LastName" placeholder="Last Name" required>
+                    </div>
+                    <div class="input-fields">
+                        <label>Date of Birth</label>
+                        <input type="date" name="DateOfBirth" placeholder="mm/dd/yyyy" required>
+                    </div>
+                    <div class="input-fields">
+                        <label>Address</label>
+                        <input type="text" name="Address" placeholder="Address" required>
+                    </div>
+                    <div class="input-fields">
+                        <label>City</label>
+                        <input type="text" name="City" placeholder="City" required>
+                    </div>
+                    <div class="input-fields">
+                        <label>State</label>
+                        <input type="text" name="StateProvince" placeholder="State" required>
+                    </div>
+                    <div class="input-fields">
+                        <label>Zip</label>
+                        <input type="text" name="PostalCode" placeholder="Zip" required>
+                    </div>
+                    <div class="input-fields">
+                        <label>Email</label>
+                        <input type="email" name="EmailAddress" placeholder="Email" required>
+                    </div>
+                    <div class="number">
+                        <div class="input-fields">
+                            <label>Number</label>
+                            <input type="tel" name="PhoneNumber" placeholder="Number" required>
+                        </div>
+                        <div class="num-type">
+                            <label for="cell">Cell
+                                <input type="radio" id="cell" name="PhoneType" value="Cell" checked>
+                            </label>
+                            <label for="home">Home
+                                <input type="radio" id="home" name="PhoneType" value="Home">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="required-check">
+                        <label for="required">
+                            <input type="checkbox" id="required" name="AgreementAcknowledgement" required>
+                            I understand that the pet I am applying for may have been acquired or surrendered from a breeder or pet store. This may have been due to age, medical condition, color, or just not the right "look" to them. We do not guarantee age or breed as we do not DNA test.
+                        </label>
+                    </div>
+                </div>
+                                                <!-- Further Questions Section -->
+                <div class="app-title">
+                    <h1>Further Questions</h1>
+                </div>
+                <div class="fields">
+                    <div class="input-fields">
+                        <p>Have you applied with any other rescue?</p>
+                        <label>Yes
+                            <input type="radio" name="AppliedWithOtherRescue" value="1">
+                        </label>
+                        <label>No
+                            <input type="radio" name="AppliedWithOtherRescue" value="0" checked>
+                        </label>
+                    </div>
+                
+                    <div class="input-fields">
+                        <p>Are you twenty-one (21) years of age or older?</p>
+                        <label>Yes
+                            <input type="radio" name="AgeConfirmation" value="1">
+                        </label>
+                        <label>No
+                            <input type="radio" name="AgeConfirmation" value="0" checked>
+                        </label>
+                    </div>
+                
+                    <div class="input-fields">
+                        <p>Who do you want to adopt this pet for?</p>
+                        <select name="IntendedPetOwnershipType" id="who-adopt-for">
+                            <option value="" selected disabled hidden>Select an option</option>
+                            <option value="Another Pet">Another Pet</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+                
+                    <div class="input-fields">
+                        <p>Where will the animal be kept when you are home?</p>
+                        <textarea name="PetKeptLocation" rows="3"></textarea>
+                    </div>
+                
+                    <div class="input-fields">
+                        <p>How much time will the animal spend alone during the day?</p>
+                        <textarea name="PetAloneTime" rows="3"></textarea>
+                    </div>
+                
+                    <div class="input-fields">
+                        <p>Why did you choose to adopt?</p>
+                        <textarea name="AdoptionReason" rows="3"></textarea>
+                    </div>
+                
+                    <div class="input-fields">
+                        <p>For what reason would you justify giving up your pet?</p>
+                        <textarea name="PetSurrenderJustification" rows="3"></textarea>
+                    </div>
+                
+                    <div class="input-fields">
+                        <p>Where will your pet go when you are on vacation?</p>
+                        <textarea name="PetVacationPlans" rows="3"></textarea>
+                    </div>
+                
+                    <div class="input-fields">
+                        <p>In what type of home do you live in?</p>
+                        <select name="HomeType" id="home-type">
+                            <option value="" selected disabled hidden>Select an option</option>
+                            <option value="single-fam">Single Family</option>
+                            <option value="duplex">Duplex</option>
+                            <option value="townhouse">Townhouse</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="condominium">Condominium</option>
+                            <option value="mob-home">Mobile Home</option>
+                            <option value="mil-house">Military Housing</option>
+                        </select>
+                    </div>
+                
+                    <div class="input-fields">
+                        <p>Do you own or rent your home?</p>
+                        <label>Own
+                            <input type="radio" name="HomeOwnershipStatus" value="Own">
+                        </label>
+                        <label>Rent
+                            <input type="radio" name="HomeOwnershipStatus" value="Rent">
+                        </label>
+                    </div>
+                
+                    <div class="input-fields">
+                        <p>Is your yard fenced?</p>
+                        <select name="YardFencingStatus" id="yard-fenced">
+                            <option value="" selected disabled hidden>Select an option</option>
+                            <option value="no-yard">No yard</option>
+                            <option value="unfenced">Unfenced</option>
+                            <option value="part-fenced">Partially fenced</option>
+                            <option value="comp-fenced">Completely fenced</option>
+                        </select>
+                    </div>
+                
+                    <div class="input-fields">
+                        <p>Do you live with parents or other relatives?</p>
+                        <label>Yes
+                            <input type="radio" name="LivingWithRelatives" value="Yes">
+                        </label>
+                        <label>No
+                            <input type="radio" name="LivingWithRelatives" value="No">
+                        </label>
+                    </div>
+                
+                    <div class="input-fields">
+                        <p>Where do your current pets spend the majority of their day?</p>
+                        <select name="CurrentPetsLocation" id="current-pets-location">
+                            <option            value="" selected disabled hidden>Select an option</option>
+                            <option value="inside-only">Inside Only</option>
+                            <option value="outside-only">Outside Only</option>
+                            <option value="inside-outside">Inside & Outside</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Terms & Conditions Section -->
+                <div class="app-title">
+                    <h1>Terms & Conditions</h1>
+                </div>
+                <div class="fields">
+                    <div class="input-fields">
+                        <p>Pet Paradise Rescue is an independent, non-profit organization. We will in no way be held responsible for any adult, child, and/or their property during the viewing process. In agreeing to this form, you attest that you agree to release Pet Paradise Rescue and its representatives from all liability for any property in your party while in the adoption area.</p>
+                        <label>Agree
+                            <input type="radio" name="TermsAgreement" value="Agree" required>
+                        </label>
+                        <label>Do Not Agree
+                            <input type="radio" name="TermsAgreement" value="Do Not Agree" required>
+                        </label>
+                    </div>
+                
+                    <div class="input-fields">
+                        <p>I certify that the information entered on this applicant is true. Type your <b>FULL NAME</b> as a signature:</p>
+                        <input type="text" name="Signature" placeholder="Full Name" required>
+                    </div>
+                </div>
+                
+                <!-- Submit Button -->
+                <div class="buttons">
+                    <button type="submit" class="submitBtn">
+                        <span class="btnText">Submit</span>
+                        <i class='bx bxs-right-arrow'></i>
+                    </button>
+                </div>
+                </form>
+                </section>
+
+<div class="have-questions">
+    <div class="contact-container">
+        <h4>Want to learn more?</h4>
+        <label>Click here!</label>
+        <button class="learn-more-btn">Learn more</button>
+    </div>
+</div>               
+</div>
+
+<footer>
+    <!-- Your footer content here -->
+</footer>
+</body>
+</html>
