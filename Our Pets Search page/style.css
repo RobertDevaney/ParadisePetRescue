@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Sora', sans-serif;
     text-decoration: none;
 }
 
@@ -16,15 +16,39 @@ nav {
     position: absolute;
     width: 100%;
     margin: auto;
-    padding: 1rem 4rem;
+    padding: 0.5rem 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5) 50%, rgba(0, 0, 0, 0));
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-logo h4 {
+    line-height: 1;
+    text-align: center;
+}
+
+.nav-logo h4 span {
+    font-size: 2rem;
 }
 
 .nav-logo img {
-    width: 100px;
+    width: 70px;
+    transition: all 0.3s ease;
+    border: 1px solid white;
+    border-radius: 999px;
+}
+
+.nav-logo img:hover {
+    box-shadow: 0 0px 50px white;
 }
 
 .nav-links {
@@ -37,14 +61,12 @@ nav {
 .link a {
     position: relative;
     font-weight: bold;
-    font-size: 1.25rem;
-    padding: 0.5rem 1rem;
-    color: #333;
-}
-
-.link a:hover {
-    color: #58355E;
+    font-size: 1rem;
+    padding: 1rem;
+    padding-bottom: 0.25rem;
+    color: #e0e0e0;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .link a::after {
@@ -54,7 +76,7 @@ nav {
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: #1d4ed8;
+    background-color: #EEBA0B;
     transition: all 0.3s ease;
 }
 
@@ -62,9 +84,9 @@ nav {
     width: 100%;
 }
 
-.btn {
+.login-btn {
     border: none;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
     font-size: 1rem;
     color: #fff;
     background-color: #1d4de8;
@@ -76,7 +98,7 @@ nav {
     transition: all 0.3s ease;
 }
 
-.btn:hover {
+.login-btn:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     background-color: #138A36;
     border-left: 2.5px solid rgb(1, 77, 24);
@@ -452,7 +474,10 @@ input[type="text"] {
 
 .column img {
     margin-top: 30px;
-    width: 50px;
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 999px;
+    filter: grayscale(80%);
 }
 
 
@@ -461,13 +486,18 @@ input[type="text"] {
     flex-direction: column;
 }
 
-.all-links .link {
+.all-links .footer-link {
     display: flex;
     gap: 15px;
 }
 
-.all-links .link i {
+.all-links .footer-link i {
     font-size: 1.25rem;
+}
+
+.all-links .footer-link a {
+    text-decoration: none;
+    color: #e0e0e0;
 }
 
 .contact-infos li {
@@ -483,6 +513,9 @@ input[type="text"] {
 }
 
 .copyright {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
     background-color: #3f3f3f;
     font-size: 0.9rem;
     color: #adadad;

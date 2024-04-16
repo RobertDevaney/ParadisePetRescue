@@ -1,81 +1,142 @@
 <!DOCTYPE html>
 <html>
- 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
-          href="style.css">
-    <title>About Us</title>
-</head>
- 
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-              Pet Paradise Rescue
-              </div>
-            <ul class="nav-links">
-                <li><a href="#">
-                  Home</a>
-                  </li>
-                <li><a href="#">
-                  Adopt</a>
-                  </li>
-                <li><a href="#">
-                  Our Pets</a>
-                  </li>
-                <li><a href="#">
-                  Donate</a>
-                  </li>
-                  <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
- 
-    <section class="about">
-        <h1>About Us</h1>
-        <p style="font-weight: bold">
-          Pet Paradise Rescue is a new start for all animals </p>
-        <div class="about-info">
-            <div class="about-img">
-                <img src="dogsplaying.jpg" alt="Dogs playing">
-            </div>
-            <div>
-            <p> Here at Pet Paradise Rescue we want to make it our mission to give every animal whether big or small, fluffy or scaley, cute or creepy. There's always challenges
-                to rehoming any pet or animal but we'll make our lifelong goal to assist each and every animal equally. We're hoping to have a strong emphasis on community and 
-                care in our rescue community. We started out only 5 years ago but we've been trucking stronger and stronger than ever successfully rehoming 1000+ animals!
-            </p>
-                <button>Contact Us Below!</button>
-            </div>
-        </div>
-    </section>
 
-    <div class="container">
-        <form action="contactus.php">
-      
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-          <label for="email">Email Address</label>
-          <input type="text" id="email" email="emailaddress" placeholder="Your email address...">
-          </select>
-      
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-      
-        </form>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>About Us</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-logo">
+      <a href="..index.html">
+        <img src="images/logo.png">
+      </a>
+      <h4>Paradise Pet <br><span>Rescue</span></h4>
+    </div>
+    <ul class="nav-links">
+      <li class="link"><a href="../index.html">Home</a></li>
+      <li class="link"><a href="../about/AboutUs.html">About Us</a></li>
+      <li class="link"><a href="../applicationpage/application.html">Adopt</a></li>
+      <li class="link"><a href="../Our Pets Search page/getpets.html">Our Pets</a></li>
+      <li class="link"><a href="../donate/donate.html">Donate</a></li>
+      <a href="../loginform/login.php"><button class="login-btn">Login</button></a>
+    </ul>
+  </nav>
+  <header class="header-container">
+    <img src="images/header-background.jpg">
+    <div class="header-title">
+      <h1>Search Adoptable Pets Now!</h1>
+    </div>
+  </header>
+
+  <section class="about">
+    <h1>About Us</h1>
+    <p style="font-weight: bold">
+      Pet Paradise Rescue is a new start for all animals </p>
+    <div class="about-info">
+      <div class="about-img">
+        <img src="dogsplaying.jpg" alt="Dogs playing">
       </div>
- 
-    <footer>
-        <p>© 2024 Pet Paradise Rescue.</p>
-    </footer>
+      <div>
+        <p> Here at Pet Paradise Rescue we want to make it our mission to give every animal whether big or small, fluffy
+          or scaley, cute or creepy. There's always challenges
+          to rehoming any pet or animal but we'll make our lifelong goal to assist each and every animal equally. We're
+          hoping to have a strong emphasis on community and
+          care in our rescue community. We started out only 5 years ago but we've been trucking stronger and stronger
+          than ever successfully rehoming 1000+ animals!
+        </p>
+        <button>Contact Us Below!</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <form action="contactus.php">
+
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="email">Email Address</label>
+      <input type="text" id="email" email="emailaddress" placeholder="Your email address...">
+      </select>
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
+
+    </form>
+  </div>
+
+
+
+
+
+  <footer>
+    <div class="footer-container">
+      <div id="about-us" class="column">
+        <div class="title">
+          <h5>About Us</h5>
+        </div>
+        <p>Paradise Pet Rescue is a non-profit animal rescue organization that focuses on the welfare of both
+          citizens and animals. We are dedicated in promoting animal happiness and provide services through
+          Valencia College</p>
+        <img src="images/logo.png">
+      </div>
+
+      <div id="webpages" class="column">
+        <div class="title">
+          <h5>All Pages</h5>
+        </div>
+        <ul class="all-links">
+          <li class="footer-link"><i class='bx bx-chevron-right'></i>
+            <a href="#">Home</a>
+          </li>
+          <li class="footer-link"><i class='bx bx-chevron-right'></i>
+            <a href="#">Our Pets</a>
+          </li>
+          <li class="footer-link"><i class='bx bx-chevron-right'></i>
+            <a href="#">About Us</a>
+          </li>
+          <li class="footer-link"><i class='bx bx-chevron-right'></i>
+            <a href="#">Donate</a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="contacts" class="column">
+        <div class="title">
+          <h5>Contact Us</h5>
+        </div>
+
+        <ul class="contact-infos">
+          <li class="org-title">
+            <p>Paradise Pet Rescue Center</p>
+          </li>
+          <li>701 N Econlockhatchee Trail, Orlando, FL 32825</li>
+          <li>(407) 123-4567</li>
+          <li>paradisepetrescue.in</li>
+          <li class="social-medias">
+            <i class='bx bxl-facebook-square'></i>
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bxl-gmail'></i>
+            <i class='bx bxl-twitter'></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>© 2024 Paradise Pet Rescue</p>
+    </div>
+  </footer>
+
 </body>
- 
+
 </html>
