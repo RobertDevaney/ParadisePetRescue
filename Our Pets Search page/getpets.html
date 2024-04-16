@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style_2.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Animals in Shelter</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a href="..index.html">
+                <img src="images/logo.jfif">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li class="link"><a href="../index.html">Home</a></li>
+            <li class="link"><a href="../about/AboutUs.html">About Us</a></li>
+            <li class="link"><a href="../applicationpage/application.html">Adopt</a></li>
+            <li class="link"><a href="../donate/donate.html">Donate</li>
+            <li class="link"><a href="../loginform/login.php">Login</a></li>
+        </ul>
+    </nav>
+    <header class="header-container">
+        <img src="images/header-background.jpg">
+        <div class="header-title">
+            <h1>Search Adoptable Pets Now!</h1>
+        </div>
+    </header>
+
+
+
+
+    <main class="main-container">
+        <div class="search-box">
+            <h2>Paradise Pet Rescue is here to assist</h2>
+            <h3>Use the search bar or select filters below</h3>
+            <p>Click on a pet's photo to learn more about it</p>
+
+            <div class="search-container">
+                <i class='bx bx-search-alt'></i>
+                <input type="text" id="petID" placeholder="Pet ID (Ex: A123456)...">
+                <button class="btn" onclick="searchPetID(true)">Search Pet ID</button>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="search-result-container">
+                <div id="pets" class="petlist-grid">
+
+                    <!-- The pets will be populated here, including images, ID and names! -->
+
+
+
+
+                </div>
+                <div class="number-bar-container">
+                    <ul class="page-numbers">
+                        <li class="number"><a href="#page-1">1</a></li>
+                        <li class="number"><a href="#page-2">2</a></li>
+                        <li class="number"><a href="#page-3">3</a></li>
+                        <li class="number"><a href="#page-4">4</a></li>
+                        <li class="number"><a href="#page-5">5</a></li>
+                        <li class="number"><a href="#page-6">6</a></li>
+                        <li class="number"><a href="#page-7">7</a></li>
+                        <li class="number"><a href="#next-page"><i class='bx bx-fast-forward'></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="filter-container">
+                <div id="type" class="filter-box">
+                    <h4>Type</h4>
+
+                    <div class="checkbox-field">
+                        <input type="checkbox" id="dog">
+                        <label for="dog">Dogs</label>
+                    </div>
+                    <div class="checkbox-field">
+                        <input type="checkbox" id="cat">
+                        <label for="cat">Cats</label>
+                    </div>
+                    <div class="checkbox-field">
+                        <input type="checkbox" id="bird">
+                        <label for="bird">Birds</label>
+                    </div>
+                    <div class="checkbox-field">
+                        <input type="checkbox" id="other">
+                        <label for="other">Others</label>
+                    </div>
+                </div>
+                <div id="age-range" class="filter-box">
+                    <h4>Age Range</h4>
+
+                    <div class="checkbox-field">
+                        <input type="checkbox" id="less-1">
+                        <label for="less-1">Less than 1</label>
+                    </div>
+                    <div class="checkbox-field">
+                        <input type="checkbox" id="1-to-3">
+                        <label for="1-to-3">1 - 3</label>
+                    </div>
+                    <div class="checkbox-field">
+                        <input type="checkbox" id="4-to-6">
+                        <label for="4-to-6">4 - 6</label>
+                    </div>
+                    <div class="checkbox-field">
+                        <input type="checkbox" id="7-to-9">
+                        <label for="7-to-9">7 - 9</label>
+                    </div>
+                    <div class="checkbox-field">
+                        <input type="checkbox" id="10+">
+                        <label for="10+">More than 10</label>
+                    </div>
+
+                </div>
+
+                <div id="gender" class="filter-box">
+                    <h4>Gender</h4>
+
+                    <div class="checkbox-field">
+                        <input type="checkbox" id="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="checkbox-field">
+                        <input type="checkbox" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+
+                <div id="spayed-neutered" class="filter-box">
+                    <h4>Spayed - Neutered</h4>
+                    <div class="checkbox-field">
+                        <input type="checkbox" id="spayed">
+                        <label for="spayed">Spayed</label>
+                    </div>
+                    <div class="checkbox-field">
+                        <input type="checkbox" id="neutered">
+                        <label for="neutered">Neutered</label>
+                    </div>
+
+                </div>
+                <div class="refine-search">
+                    <button class="btn" onclick=refineSearch(true)>Refine Search</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div id="about-us" class="column">
+                <div class="title">
+                    <h5>About Us</h5>
+                </div>
+                <p>Paradise Pet Rescue is a non-profit animal rescue organization that focuses on the welfare of both
+                    citizens and animals. We are dedicated in promoting animal happiness and provide services through
+                    Valencia College</p>
+            </div>
+
+            <div id="webpages" class="column">
+                <div class="title">
+                    <h5>All Pages</h5>
+                </div>
+                <ul class="all-links">
+                    <li class="link"><i class='bx bx-chevron-right'></i>
+                        <p>Home</p>
+                    </li>
+                    <li class="link"><i class='bx bx-chevron-right'></i>
+                        <p>Our Pets</p>
+                    </li>
+                    <li class="link"><i class='bx bx-chevron-right'></i>
+                        <p>About Us</p>
+                    </li>
+                    <li class="link"><i class='bx bx-chevron-right'></i>
+                        <p>Donate</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="contacts" class="column">
+                <div class="title">
+                    <h5>Contact Us</h5>
+                </div>
+
+                <ul class="contact-infos">
+                    <li class="org-title">
+                        <p>Paradise Pet Rescue Center</p>
+                    </li>
+                    <li>701 N Econlockhatchee Trail, Orlando, FL 32825</li>
+                    <li>(407) 123-4567</li>
+                    <li>paradisepetrescue.in</li>
+                    <li class="social-medias">
+                        <i class='bx bxl-facebook-square'></i>
+                        <i class='bx bxl-instagram'></i>
+                        <i class='bx bxl-gmail'></i>
+                        <i class='bx bxl-twitter'></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2024 Paradise Pet Rescue</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
